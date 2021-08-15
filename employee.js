@@ -17,7 +17,7 @@ class employee {
         return this.email;
     }
 
-    getPosition () {
+    getRole () {
         return "Employee";
     }
 };
