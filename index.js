@@ -1,6 +1,7 @@
+const pageGenerator = require('./html');
 const fs = require('fs');
 const inquirer = require('inquirer');
-const pageGenerator = require('./html');
+
 
 const manager = require('./manager');
 const engineer = require('./engineer');
@@ -103,3 +104,26 @@ const addEmployee = () => {
         }
     })
 };
+
+const writeFile = data => {
+    fs.writeFile('newPage.html', data, err => {
+        if (err) {
+            console.error(err);
+            return;
+        } else {
+            console.log("Success!! 😊")
+        }
+    })
+};
+
+addManager()
+    .then(addEmployee)
+    .then(teamArr => {
+        return pageGenerator(teamArr);
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+    .catch(err => {
+        console.error(err);
+    })

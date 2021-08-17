@@ -123,3 +123,72 @@ const createIntern = function (intern) {
         </div>`;
 };
 
+pageGenerator = (data) => {
+    pageArr = [];
+
+    for (let i = 0; i < data.length; i ++) {
+        const employee = data[i];
+        const role = employee.getRole();
+
+        if (role === 'Manager') {
+            const managerCard = createManager(employee);
+
+            pageArr.push(managerCard);
+        }
+
+        if (role === 'Engineer') {
+            const engineerCard = createEngineer(employee);
+
+            pageArr.push(engineerCard);
+        }
+
+        if (role === 'Intern') {
+            const internCard = createIntern(employee);
+
+            pageArr.push(internCard);
+        }
+    }
+
+    const employeeCards = pageArr.join('')
+
+    const createTeam = createTeamPage(employeeCards);
+    return createTeam;
+}
+
+const createTeamPage = function (employeeCards) {
+    return `
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Team Profiles</title>
+</head>
+<body>
+    <section>
+        <div class="px-4 py-24 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <h1
+              class="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+            >
+              Meet the Team
+            </h1>
+          </div>
+        </div>
+      </section>
+
+    <!-- component -->
+<div class="flex items-center justify-center">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+    ${employeeCards}
+    </div>
+</div>
+
+
+</body>
+</html>`;
+}
+
+module.exports = pageGenerator;
