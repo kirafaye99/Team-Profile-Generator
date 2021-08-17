@@ -1,9 +1,7 @@
-const { test, expect } = require('@jest/globals');
-const exp = require('constants');
 const Employee = require('../employee');
 
 
-test('creates employee object',() => {
+test('create employee object',() => {
     const employee = new Employee('Kira', 13, 'kirademarco.codes@gmail.com');
 
     expect(employee.name).toEqual(expect.any(String));
@@ -32,7 +30,7 @@ test("gets employee's email", () => {
 });
 
 
-test('gets role of employee', () => {
+test('get role of employee', () => {
     const employee = new Employee('Kira', 13, 'kirademarco.codes@gmail.com');
 
     expect(employee.getRole()).toEqual("Employee");

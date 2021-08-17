@@ -27,7 +27,7 @@ const createManager = function (manager) {
                             class="w-6 h-6 rounded-full"/>
                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSqK0tVELGWDYAiUY1oRrfnGJCKSKv95OGUtm9eKG9HQLn769YDujQi1QFat32xl-BiY&usqp=CAU" 
                             class="w-6 h-6 rounded-full"/> -->
-                            <p>${manager.officeNum}</p>
+                            <p>${manager.office}</p>
                         </div>
                     </div>
                      <div class="my-2">
