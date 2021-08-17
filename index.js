@@ -3,9 +3,9 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern');
+const Manager = require('./classes/Manager');
+const Engineer = require('./classes/Engineer');
+const Intern = require('./classes/Intern');
 
 const teamArr = [];
 
