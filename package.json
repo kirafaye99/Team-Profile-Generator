@@ -1,0 +1,29 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "![License](https://img.shields.io/badge/license-Open-brightgreen)\r ## Description\r This application is designed to create a profile with cards of your current employees using the commandline in node. The project was created using HTML, TailwindCSS, Javascript, and Node.js.\r - I wanted to create this project to make it easier for users to display their employees in a neat, organized fashion.\r - At first I was having some trouble creating tests for this application, but they were eventually successful, so I better learned how to write tests.\r ## Table of Contents\r - [Installation](#installation)\r - [Usage](#usage)\r - [Credit](#credit)\r - [License](#license)\r - [Tests](#tests)\r - [Questions](#questions)\r ## Installation\r - [Download node](https://nodejs.org/en/download/)\r - Download inquirer `npm i inquirer`\r - Download jest `npm i jest`\r ## Usage\r Once everything is installed, type `node index.js` into the integrated terminal, then follow the prompts. After all prompts have been completed, go to the newPage.html file to view the HTML for your new website.\r ## Credit\r - [kirafaye99](https://github.com/kirafaye99)\r - [HyperUI](https://www.hyperui.dev/)\r - [Cards](https://tailwindcomponents.com/component/wan)\r ## License\r Open License\r ## Tests\r To run the tests type `npm test` into the command line in the integrated terminal.\r ## Questions\r #### [My Github](https://github.com/kirafaye99)\r #### Email: \r - kirademaco.codes@gmail.com\r #### How to reach out to me:\r - Please reach out to me via email, as that will be the quickest!",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.2",
+    "jest": "^27.0.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirafaye99/Team-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirafaye99/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/kirafaye99/Team-Profile-Generator#readme"
+}

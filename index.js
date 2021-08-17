@@ -1,11 +1,11 @@
-const pageGenerator = require('./html');
+const pageGenerator = require('./htmlTemplate');
 const fs = require('fs');
 const inquirer = require('inquirer');
 
 
-const Manager = require('./manager');
-const Engineer = require('./engineer');
-const Intern = require('./intern');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 
 const teamArr = [];
 
