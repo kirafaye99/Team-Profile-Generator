@@ -17,6 +17,7 @@ This application is designed to create a profile with cards of your current empl
 - Download jest `npm i jest`
 ## Usage
 Once everything is installed, type `node index.js` into the integrated terminal, then follow the prompts. After all prompts have been completed, go to the newPage.html file to view the HTML for your new website.
+[Watch a tutorial video here!](https://drive.google.com/file/d/1MlscreVjMdCCKnJvVZ7d6rQeLPf8UIuz/view)
 ## Credit
 - [kirafaye99](https://github.com/kirafaye99)
 - [HyperUI](https://www.hyperui.dev/)
