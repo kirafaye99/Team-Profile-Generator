@@ -143,16 +143,16 @@ pageGenerator = (data) => {
 
 const createTeamPage = function (employeeCards) {
     return `
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head class="bg-blue-100">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Team Profiles</title>
 </head>
-<body>
+<body class="bg-blue-100">
     <section>
         <div class="px-4 py-24 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
           <div class="max-w-3xl mx-auto text-center">
